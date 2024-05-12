@@ -1,0 +1,68 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas:
+      "navbar navbar"
+      "sidebar grilla"
+      "piedepagina piedepagina";
+  }/* aplica el template areas 4p*/
+  
+  .navbar {
+    grid-area: navbar;
+    background-color: rgb(201, 26, 26);
+    text-align: center;
+    color: antiquewhite;
+    font-size: 140%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: gainsboro;
+    height: 80vh100;
+    display: flex;   /*sidebar con flex 1punto*/
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px rgb(201, 26, 26) solid;
+
+  }
+  
+
+
+  .grilla {
+    grid-area: grilla;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: gainsboro;
+    
+  }
+  
+
+  .piedepagina {
+    grid-area: piedepagina;
+    background-color: rgb(201, 26, 26);
+    text-align: center;
+    color: antiquewhite;
+    font-size: 120%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  a{
+    color: rgb(201, 26, 26);
+  }
+
+  .producto{
+    
+    display: flex;   /*cards con flex 1punto*/
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  .bordercomprar{
+    border: 2px rgb(201, 26, 26) solid;
+  }
